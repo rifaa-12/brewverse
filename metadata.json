@@ -1,0 +1,6 @@
+{
+  "name": "BrewVerse — Artisanal Roastery & Luxury Extraction",
+  "description": "An ultra-luxurious, cinematic digital atelier for specialty coffee connoisseurs featuring 3D extraction rituals, single-origin provenance allocations, bespoke roast profiles, and sensory reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
