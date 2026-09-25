@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-espresso-base: #0c0908;
+  --color-espresso-deep: #14100e;
+  --color-roast-surface: #161311;
+  --color-roast-elevated: #1e1815;
+  --color-crema-caramel: #d99b61;
+  --color-crema-radiance: #caa06d;
+  --color-golden-hour: #e5b869;
+  --color-warm-ivory: #f6efe8;
+  --color-muted-parchment: #a89c90;
+  --color-surface-container: #231f1d;
+  --color-surface-container-high: #2d2928;
+  --color-surface-container-low: #191513;
+  --color-amber-ember: #8c4a1e;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0c0908;
+    color: #f6efe8;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom keyframes & utilities */
+@keyframes subtleGlow {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(1.08); }
+}
+
+@keyframes floatRings {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-ambient-glow {
+  animation: subtleGlow 8s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: floatRings 45s linear infinite;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0908;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2928;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d99b61;
+}
